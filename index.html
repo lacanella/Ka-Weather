@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ka-Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/8style.css" />
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="application">
+        <form class="mb-3" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                class="form-control"
+                id="typecity"
+                autocomplete="off"
+                autofocus="on"
+                placeholder="type a city"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                id="searchbutton"
+                value="search"
+                class="btn btn-primary"
+              />
+            </div>
+          </div>
+        </form>
+        <h1 id="cityname">Kyiv</h1>
+        <ul class="date-cond">
+          <li id="currentdate">Friday 12:00</li>
+          <li id="conditions">Cloudly</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="weather-temperature">
+              <img src="" alt="" width="55px" class="pic" id="icon" />
+              <span><strong id="temperature"></strong></span>
+              <span class="degrees">
+                <a href="#"><span id="celsius" class="active">°C</span></a> |
+                <a href="#"><span id="fahrenheit">°F</span></a>
+              </span>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul class="discription">
+              <li>humidity <span id="humidity">4</span>%</li>
+              <li>wind <span id="wind">7</span>km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="forecast-date">Sun</div>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/182/182264.png"
+                alt=""
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">22</span>°
+                <span class="forecast-temperature-min">18</span>°
+              </div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+      <small class="osc">
+        <a href="https://github.com/lacanella/Ki-Weather" target="_blank"
+          >open-source code</a
+        >
+        by Karina Ahakhanova
+      </small>
+    </div>
+    <script src="src/8java.js"></script>
+  </body>
+</html>
