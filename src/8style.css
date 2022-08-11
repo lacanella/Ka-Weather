@@ -50,7 +50,7 @@ strong {
 }
 .degrees {
   position: relative;
-  font-size: 15px;
+  font-size: 19px;
   top: -19px;
 }
 .discription {
@@ -59,11 +59,7 @@ strong {
 .weather-temperature {
   margin-top: 10px;
 }
-.weather-temperature .active {
-  color: black;
-  cursor: default;
-  text-decoration: underline;
-}
+
 .weather-temperature .pic {
   margin-left: -10px;
 }
