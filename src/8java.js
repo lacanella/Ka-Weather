@@ -90,3 +90,32 @@ let celciusLink = document.querySelector("#celsius");
 celciusLink.addEventListener("click", showCelsiusTemp);
 
 search("Kyiv");
+
+function showforecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+        <div class="col-2">
+              <div class="forecast-date">${day}</div>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/182/182264.png"
+                alt=""
+                width="40"
+              />
+              <div class="forecast-temperature">
+                <span class="forecast-temperature-max">22</span>°
+                <span class="forecast-temperature-min">18</span>°
+              </div>
+            </div>
+      `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+showforecast();
