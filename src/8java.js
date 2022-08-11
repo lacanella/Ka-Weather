@@ -113,5 +113,7 @@ function searching(event) {
   let typecityElement = document.querySelector("#typecity");
   search(typecityElement.value);
 }
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", searching);
 
 search("Kyiv");
